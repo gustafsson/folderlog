@@ -4,7 +4,7 @@ set -e
 
 cd "`dirname \"$0\"`"
 
-rsync -azv ~/"Google Drive" .
+rsync -azv --delete ~/"Google Drive" .
 
 git add -u 'Google Drive'
 git add 'Google Drive'
